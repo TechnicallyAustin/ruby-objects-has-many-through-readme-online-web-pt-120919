@@ -7,11 +7,10 @@ class Waiter
     @@all << self
   end
   
-  def new_meal(name)
-    name = Meal.new(name)
-    meal.waiter = self 
+  def new_meal(customer,total,tip)
+    Meal.new(self, customer, total, tip)
   end
-    
+  
                                                                                                     
   
   
